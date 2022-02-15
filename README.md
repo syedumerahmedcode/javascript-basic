@@ -6,3 +6,6 @@ https://bechtle.udemy.com/course/javascript-tutorial-for-beginners-w/learn/lectu
 
 # Notes:
 - Three ways to add java script: Inine javascript, internal javascript and external javascript.
+
+Chapter 18:
+Timestamp: 2:28
