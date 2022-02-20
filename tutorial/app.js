@@ -1,6 +1,6 @@
 //document.write(2 + 2);
 // alert("Hello people!");
-let personName;
+let personName = "John Smith";
 
 console.log("My name is " + personName);
 // some code
