@@ -1,10 +1,8 @@
-//document.write(2 + 2);
-// alert("Hello people!");
-const firstName = "John";
-const lastName = "Smith";
-const address = "Main street 100";
-const postalCode = "12345";
-const city = "Stockholm";
+// Number
+// loosely typed = don't declare type
+const integerNumber = 34;
+let decimalNumber = 3.4;
+// decimalNumber = "are great";
 
-// Follolwing line shows how one can print multiple variable within the a single console log output.
-console.log("The Bio data is " + personName, address, postalCode, city);
+console.log(integerNumber);
+console.log(decimalNumber);
