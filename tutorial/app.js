@@ -1,23 +1,19 @@
 // Arrays, Functions and objects
 // Functions - declare, invoke
-// params - when declare/define placeholders, local vars
-// arguments -when invole/call/run use var/values, multiple params, undefined
+// return
+// default undefined, shortcuts, ignores after...
+// 1 inch = 2.54 cm
+const wallHeight = 80;
+const wallWidth = 100;
 
 /**
- * This is function declaration.
+ * NOTE: Please note that if a method does not have a return type specified, then all functions by default in javascript return undefined.
+ * @param {Some value, in our case it is a int specifying inches.} value
  */
-function hello(personName) {
-  // logic
-  console.log("Hello there, " + personName);
+function calculate(value) {
+  console.log("The value in cm is: " + value * 2.54 + "cms. ");
 }
-/**
- * This is function invocation
- */
-// greet Bob
-hello("Bob");
-// greet Anna
-hello("Anna");
-// greet Susy
-hello("Susy");
-// The following thing prints undefined in console log if no argument is passed.
-hello();
+const width = calculate(wallWidth);
+const height = calculate(wallHeight);
+const dimensions = [width, height];
+console.log(dimensions);

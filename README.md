@@ -9,3 +9,6 @@ https://bechtle.udemy.com/course/javascript-tutorial-for-beginners-w/learn/lectu
 # Notes:
 
 - Three ways to add java script: Inine javascript, internal javascript and external javascript.
+- For functions:
+
+* Please note that if a method does not have a return type specified, then all functions by default in javascript return undefined.
