@@ -11,7 +11,10 @@ const wallWidth = 100;
  * @param {Some value, in our case it is a int specifying inches.} value
  */
 function calculate(value) {
-  console.log("The value in cm is: " + value * 2.54 + "cms. ");
+  // If string is returned, the the console log for dimensions will contain the string specified in the return statement
+  // return "Hello world";
+  // Now the function is returned as a decimal number.
+  return value * 2.54;
 }
 const width = calculate(wallWidth);
 const height = calculate(wallHeight);
