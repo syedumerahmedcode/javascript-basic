@@ -16,3 +16,8 @@ const fourthValue = add(10, 36);
 const values = [firstValue, secondValue, thirdValue, fourthValue];
 
 console.log(values);
+
+// An example of arrow function
+const multiply = (num1, num2) => num1 * num2;
+const anotherTest = multiply(9, 7);
+console.log(anotherTest);
