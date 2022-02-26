@@ -1,23 +1,26 @@
-// Assigning a function to a variable instead of its value.
+// Objects - key/value pairs methods
+// dot notation
 
-function calculate(firstNumber, secondNumber) {
-  return firstNumber + secondNumber;
-}
-const firstValue = calculate(3, 4);
-const secondValue = calculate(10, 36);
-
-// function expression
-const add = function (firstNumber, secondNumber) {
-  return firstNumber + secondNumber;
+const person = {
+  firstName: "John",
+  lastName: "Smith",
+  age: 40,
+  education: false,
+  married: true,
+  siblings: ["Alice", "Bob", "Carol"],
+  greeting: function () {
+    console.log("Hello, my name is John");
+  },
 };
-// How to use a function expression
-const thirdValue = add(3, 4);
-const fourthValue = add(10, 36);
-const values = [firstValue, secondValue, thirdValue, fourthValue];
 
-console.log(values);
-
-// An example of arrow function
-const multiply = (num1, num2) => num1 * num2;
-const anotherTest = multiply(9, 7);
-console.log(anotherTest);
+console.log(
+  "The name of the person is " + person.firstName + " " + person.lastName
+);
+const age = person.age;
+console.log("The age of the person is " + age);
+person.education = true;
+const isPersonEducated = person.education;
+console.log("Is the person educated: " + isPersonEducated);
+console.log("Is person married: " + person.married);
+console.log("The person has the following siblings: " + person.siblings);
+person.greeting();
