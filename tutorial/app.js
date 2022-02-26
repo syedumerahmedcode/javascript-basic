@@ -2,14 +2,10 @@
 // >, <, >=, <=, ==, ===, !=, !===
 // else if and !
 
-const num1 = 8;
-const num2 = 6;
-const result = num1 >= num2;
-// console.log( value);
-if (num1 < num2) {
-  console.log("First number is bigger than second number");
-} else if (result) {
-  console.log("First number is equal to second number");
-} else {
-  console.log("Second number is bigger than first number");
-}
+const num1 = 6;
+const num2 = "6";
+const value = num1 == num2;
+
+const value2 = num1 === num2;
+console.log("== comparison corresponds to " + value);
+console.log("=== comparison corresponds to " + value2);
