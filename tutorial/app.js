@@ -1,10 +1,15 @@
 // Conditional statements
 // >, <, >=, <=, ==, ===, !=, !===
+// else if and !
 
-const value = 2 > 1;
-console.log(typeof value);
-if (value) {
-  console.log("Hello world");
+const num1 = 8;
+const num2 = 6;
+const result = num1 >= num2;
+// console.log( value);
+if (num1 < num2) {
+  console.log("First number is bigger than second number");
+} else if (result) {
+  console.log("First number is equal to second number");
 } else {
-  console.log("Hello people.");
+  console.log("Second number is bigger than first number");
 }
