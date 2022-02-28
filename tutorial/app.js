@@ -1,20 +1,18 @@
-// Loops
-// repeatedly run a block of code while the condition is true
-// do while loop
-// code block first, condition second
-// runs at least once
+// String properties and methods
+// wrapper String object, don't memorize methods
 
-let money = 0;
+let text = "John Smith";
+let result = text.length;
+console.log("The number of characters in the name are: " + result);
 
-do {
-  console.log("You have " + money + " dollars.");
-  money++;
-} while (money < 10);
+const person = {
+  name: "John", // property
+  greeting() {
+    // method
+    console.log("Hey, I am John");
+  },
+};
 
-// When with a false condition(money2<10 equals false), it gets executed at least once.
-let money2 = 12;
-
-do {
-  console.log("You have " + money2 + " dollars.");
-  money2++;
-} while (money2 < 10);
+console.log(person);
+console.log(person.name);
+person.greeting();
