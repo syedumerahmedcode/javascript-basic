@@ -8,16 +8,20 @@ function calculate(arr) {
     // console.log(arr[i]);
     total += arr[i];
   }
-  // console.log("The total is " + total);
+  if (total > 100) {
+    console.log("Whoa! You are spending way too much.");
+    return total;
+  }
+  console.log("You are good! You are spending less than 100.");
   return total;
 }
 
 const gasTotal = calculate(gas);
 const foodTotal = calculate(food);
 const randomTotal = calculate([200, 4000, 500, 1]);
-console.log("The total for gas is " + gasTotal);
-console.log("The total for food is " + foodTotal);
-console.log("The total for randam array is " + randomTotal);
+// console.log("The total for gas is " + gasTotal);
+// console.log("The total for food is " + foodTotal);
+// console.log("The total for randam array is " + randomTotal);
 // Or a more interesting way of doing console log together
 console.log({
   gas: gasTotal,
