@@ -1,15 +1,12 @@
-// Arrays and for loops
-const names = ["Adam", "Susy", "Bob"];
-const lastName = "ShakeAndBake";
-let newArray = [];
+// Functions return if array for loop
+const gas = [20, 40, 100, 30];
+const food = [10, 40, 50];
 
-// for loop
-for (let i = 0; i < names.length; i++) {
-  console.log(i);
-  console.log(names[i]);
-  const fullName = `${names[i]} ${lastName}`;
-  newArray.push(fullName);
+function calculate(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
 
-console.log(names);
-console.log(newArray);
+calculate(food);
