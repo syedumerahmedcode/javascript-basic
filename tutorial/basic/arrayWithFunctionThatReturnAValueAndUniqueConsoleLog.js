@@ -22,6 +22,7 @@ const randomTotal = calculate([200, 4000, 500, 1]);
 // console.log("The total for gas is " + gasTotal);
 // console.log("The total for food is " + foodTotal);
 // console.log("The total for randam array is " + randomTotal);
+// console.log("The total for randam array is " + randomTotal);
 // Or a more interesting way of doing console log together
 console.log({
   gas: gasTotal,
