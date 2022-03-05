@@ -1,16 +1,20 @@
-/**
- *Null and undefined
- Both represent 'no value'
+// Truthy and Falsy
+// "", '', ``, , -, NaN, false, null, undefined
 
- undefined - javascript cannot find a value for this
-Where can null happen?
- variable without value
- missing function arguments
- missing object properties
+const bool1 = true;
+const bool2 = 2 > 1;
 
- null - developer sets the value
- */
-let number = 20 + null; //20 + 0;
-console.log(number); //20
-let number2 = 20 + undefined; //20 + javascript cannot find the value;
-console.log(number2); //NaN
+const text = ""; // Blank spyce generates falsy. Read comments above for other conditions.
+
+if (text) {
+  console.log("Hey the value is Truthy!");
+} else {
+  console.log("The value is falsy");
+}
+
+if (bool1) {
+  console.log("Hey it works!");
+}
+if (bool2) {
+  console.log("Hey it also works...");
+}
