@@ -1,23 +1,15 @@
-// variable lookup
-// {} - code look up
-
-const globalNumber = 5;
-
-function add(num1, num2) {
-  /**
-   * The way JS works is that it looks up a variable in the
-   * local scope first, then in the global scope. That means
-   * if const globalNumber = 20;is commented in, it is
-   * given precedence by JS
-   */
-  //const globalNumber = 20;
-  const result = num1 + num2 + globalNumber;
-  function multiply() {
-    const multiplyResult = result * globalNumber;
-    console.log(multiplyResult);
-  }
-  multiply();
-  return result;
-}
-
-console.log(add(3, 4));
+/**
+ * Callback functions, higher order functions, Functions as first
+ * class objects/citizens
+ *
+ * Functions are first class objects - stored in a variable
+ * (expression), passed as an argument to another function,
+ * return from a function (closure)
+ *
+ * Higher order functions - accepts another function as an
+ * argument or returns another function as a result
+ *
+ * Callback functions - passed to another function as an
+ * argument and executed inside that function
+ *
+ */
