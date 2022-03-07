@@ -6,10 +6,33 @@
  * call callback against each item in the array.
  * Reference Item in the callback parameter.
  */
+/**
+ * forEach
+ * does not return new array
+ */
 
-const numbers = [0, 1, 2, 3, 4];
-
-// show all numbers
-for (let i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+const people = [
+  { name: "Bob", age: 20, position: "developer" },
+  { name: "Peter", age: 25, position: "designer" },
+  { name: "Susy", age: 30, position: "the boss" },
+];
+/**
+ * Callback function which is called from forEach() function.
+ * @param {Person Object} person
+ */
+function showPerson(person) {
+  console.log(person.position.toUpperCase());
 }
+
+/**
+ * ForEach is a higher order function that accepts a callback
+ * function --> which we defined in your javascript file.
+ */
+people.forEach(showPerson);
+
+/**
+ * forEach() used via anonymous function.
+ */
+people.forEach(function (item) {
+  console.log(item.age + 10);
+});
