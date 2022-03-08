@@ -8,10 +8,11 @@
  */
 
 /**
- * find
- * returns a single instance - (in this case object)
- * returns first match, if no match undefined
- * great for getting unique value
+ * reduce
+ * iterates, callback function
+ * reduces to a single value - number, array, object
+ * 1 parameter ('acc') - total of all calculations
+ * 2 parameter ('curr') - current iteration/value
  */
 const people = [
   { name: "Bob", age: 20, position: "developer", id: 1 },
@@ -20,9 +21,7 @@ const people = [
   { name: "Anna", age: 35, position: "the big boss", id: 4 },
 ];
 
-const boss = people.find(function (person) {
-  return person.position.includes("boss");
-});
+//const boss = people.reduce
 console.log(boss);
 
 const personById4 = people.find(function (person) {
