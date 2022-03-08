@@ -8,9 +8,10 @@
  */
 
 /**
- * filter - does return a new array .
- * Can manipulate the size of the array
- * returns based on condition
+ * find
+ * returns object
+ * returns first match, if no match undefined
+ * great for getting unique value
  */
 const people = [
   { name: "Bob", age: 20, position: "developer" },
@@ -18,13 +19,3 @@ const people = [
   { name: "Susy", age: 30, position: "the boss" },
   { name: "Anna", age: 35, position: "the big boss" },
 ];
-
-const youngPeople = people.filter(function (person) {
-  return person.age <= 25;
-});
-console.log(youngPeople);
-
-const leadershipTeam = people.filter(function (person) {
-  return person.position.includes("boss");
-});
-console.log(leadershipTeam);
