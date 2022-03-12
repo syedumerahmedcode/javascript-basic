@@ -17,4 +17,9 @@ const studentsWithHighScore = students.filter(function (currentStudent) {
   // This works because in the background truthy is working.
   return currentStudent.score >= 80;
 });
-console.log(studentsWithHighScore);
+// console.log(studentsWithHighScore);
+
+const studentWithSpecificId = students.find(function (currentStudent) {
+  return currentStudent.id === 1;
+});
+console.log(studentWithSpecificId);
