@@ -5,3 +5,7 @@ const students = [
   { id: 4, name: "Susy", score: 60, favouriteSubject: "history" },
   { id: 5, name: "Carrey", score: 82, favouriteSubject: "maths" },
 ];
+
+function sayName(name) {
+  console.log(name);
+}
