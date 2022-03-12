@@ -7,8 +7,14 @@ const updatedStudent = students.map(function (currentStudent) {
 // console.log(updatedStudent);
 
 const studentsWithHighScore = students.filter(function (currentStudent) {
-  if (currentStudent.score >= 80) {
-    return currentStudent;
-  }
+  // if (currentStudent.score >= 80) {
+  //   return currentStudent;
+  // }
+
+  // Following example return the value in a one liner
+  // if (currentStudent.score >= 80) return currentStudent;
+
+  // This works because in the background truthy is working.
+  return currentStudent.score >= 80;
 });
 console.log(studentsWithHighScore);
