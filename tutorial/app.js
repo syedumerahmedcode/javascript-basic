@@ -1,29 +1,9 @@
-/**
- * Powerful array methods
- * forEach, map, filetr, find, reduce
- * Iterate over array - no for loop required
- * Accept callback function as an argument,
- * call callback against each item in the array.
- * Reference Item in the callback parameter.
- */
-
-/**
- * reduce
- * iterates, callback function
- * reduces to a single value - number, array, object
- * 1 parameter ('acc') - total of all calculations
- * 2 parameter ('curr') - current iteration/value
- */
-const people = [
-  { name: "Bob", age: 20, position: "developer", id: 1, salary: 1000 },
-  { name: "Peter", age: 25, position: "designer", id: 2, salary: 3000 },
-  { name: "Susy", age: 30, position: "the boss", id: 3, salary: 8000 },
-  { name: "Anna", age: 35, position: "the big boss", id: 4, salary: 8000 },
+const students = [
+  { id: 1, name: "peter", score: 80, favouriteSubject: "maths" },
+  { id: 2, name: "Alice", score: 99, favouriteSubject: "english" },
+  { id: 3, name: "Bob", score: 77, favouriteSubject: "maths" },
+  { id: 4, name: "Susy", score: 60, favouriteSubject: "history" },
+  { id: 5, name: "Carrey", score: 82, favouriteSubject: "maths" },
 ];
 
-const total = people.reduce(function (acc, currItem) {
-  console.log(`current salary: ${currItem.salary}`);
-  acc += currItem.salary;
-  console.log(`acc: ${acc}`);
-  return acc;
-}, 0);
+console.log(students);
