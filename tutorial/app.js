@@ -1,5 +1,4 @@
 // window browser
-// document
+// document objects exists inside window object
 // console.dir
-alert("Hello world");
 console.log(window);
