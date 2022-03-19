@@ -1,13 +1,16 @@
 /**
- * Select the elemnts of the group of elements that we want
- * Decide the effect we want to apply to the selection
+ * Select the element or the group of elements that we want
+ * Decide the effect that we want to apply to the collection
+ *
+ * getElementsByTagName('tagName')
+ * HTMLCollection = array like object
+ * index, length property but not array methods
+ *
+ * querySelectorAll() in most cases
+ * NodeList - objects are collections of nodes
+ * can run forEach()
+ * turn them into array - spread operator
+ * after that we can use any array properties
+ *
  *
  */
-
-// getElementById("element");
-const h1 = document.getElementById("title");
-h1.style.color = "red";
-
-const btn = document.getElementById("btn");
-btn.style.backgroundColor = "blue";
-btn.style.color = "white";
