@@ -17,3 +17,5 @@ https://bechtle.udemy.com/course/javascript-tutorial-for-beginners-w/learn/lectu
 
 * == checks only value
 * === checks value and type
+
+* document objects exists inside window object
