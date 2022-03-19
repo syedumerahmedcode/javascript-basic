@@ -2,18 +2,18 @@
  * Select the element or the group of elements that we want
  * Decide the effect that we want to apply to the collection
  *
- * querySelector('any css'): selects single
- * querySelectorAll('any css'): selects all
+ * childNodes - returns all child nodes including whitespace
+ * which is treated as a text node
+ *
+ * children, firstChild, lastChild
  */
-// here # refers to a css object
+
 const result = document.querySelector("#result");
-result.style.backgroundColor = "blue";
-
-const items = document.querySelectorAll(".special");
-items.forEach(function (item) {
-  console.log("Inside for each: " + item);
-});
-// console.log(items);
-
-const lastItem = document.querySelector("li:last-child");
-console.log(lastItem);
+// console.log(result);
+// returns everything including whitespaces which is treated as a node
+const allChildren = result.childNodes;
+// console.log(allChildren);
+const children = result.children;
+// console.log(children);
+console.log(result.firstChild);
+console.log(result.lastChild);
