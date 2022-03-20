@@ -2,9 +2,8 @@
  * Select the element or the group of elements that we want
  * Decide the effect that we want to apply to the collection
  *
- * previousSibling
- * nextSibiling
- * return whitespace
+ * previousElementSibling
+ * nextElementSibiling
  */
 
 /**
@@ -14,10 +13,7 @@
  */
 const first = document.querySelector(".first");
 console.log(first);
-const whitespace = first.nextSibling;
-console.log(whitespace);
-const second = (first.nextSibling.nextSibling.style.color = "red");
-console.log(second);
+first.nextElementSibling.style.color = "red";
 
 /**
  * since we are searching for id=last,
@@ -26,7 +22,4 @@ console.log(second);
  */
 const last = document.querySelector("#last");
 console.log(last);
-const anotherWhitespace = last.previousSibling;
-console.log(anotherWhitespace);
-const secondLast = (last.previousSibling.previousSibling.style.color = "blue");
-console.log(secondLast);
+last.previousElementSibling.style.color = "blue";
