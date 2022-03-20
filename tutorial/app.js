@@ -2,18 +2,31 @@
  * Select the element or the group of elements that we want
  * Decide the effect that we want to apply to the collection
  *
- * childNodes - returns all child nodes including whitespace
- * which is treated as a text node
- *
- * children, firstChild, lastChild
+ * previousSibling
+ * nextSibiling
+ * return whitespace
  */
 
-const result = document.querySelector("#result");
-// console.log(result);
-// returns everything including whitespaces which is treated as a node
-const allChildren = result.childNodes;
-// console.log(allChildren);
-const children = result.children;
-// console.log(children);
-console.log(result.firstChild);
-console.log(result.lastChild);
+/**
+ * since we are searching for class=first,
+ * hence, we give a '.'(dot) before the
+ * class name
+ */
+const first = document.querySelector(".first");
+console.log(first);
+const whitespace = first.nextSibling;
+console.log(whitespace);
+const second = (first.nextSibling.nextSibling.style.color = "red");
+console.log(second);
+
+/**
+ * since we are searching for id=last,
+ * hence, we give a '#'(hashtag) before the
+ * id
+ */
+const last = document.querySelector("#last");
+console.log(last);
+const anotherWhitespace = last.previousSibling;
+console.log(anotherWhitespace);
+const secondLast = (last.previousSibling.previousSibling.style.color = "blue");
+console.log(secondLast);
