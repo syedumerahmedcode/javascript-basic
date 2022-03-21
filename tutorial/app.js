@@ -7,3 +7,5 @@ const value = item.nodeValue;
 console.log(value);
 // This returns the correct value
 console.log(item.firstChild.nodeValue);
+
+console.log(item.textContent);
