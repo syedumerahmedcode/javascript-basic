@@ -2632,11 +2632,16 @@ const reposAsJSON = JSON.parse(json);
 // console.log(reposAsJSON);
 
 const reposWithSpecificLanguage = reposAsJSON.filter(function (repo) {
+  console.log("##########################################");
   if (repo.language === programmingLanguageToSearchFOr) {
-    return repo.name;
+    console.log(
+      repo.name + " project contains " + programmingLanguageToSearchFOr
+    );
+    console.log("##########################################");
   }
 });
-console.log(reposWithSpecificLanguage);
+// console.log(reposWithSpecificLanguage);
+
 //example of grabbing objects that match some key and value in JSON
 // console.log(getObjects(js,'ID','SGML'));
 //returns 1 object where a key names ID has the value SGML
