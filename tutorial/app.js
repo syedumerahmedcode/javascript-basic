@@ -2637,6 +2637,8 @@ const reposWithSpecificLanguage = reposAsJSON.filter(function (repo) {
     console.log(
       repo.name + " project contains " + programmingLanguageToSearchFOr
     );
+    console.log(repo.url);
+    console.log("In the sub json, we need to call html_url property");
     console.log("##########################################");
   }
 });
