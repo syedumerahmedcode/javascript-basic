@@ -17,3 +17,13 @@ bodyDiv.appendChild(text);
 // add bodydiv(containing text node) to the document
 // so that it appears on the screen
 document.body.appendChild(bodyDiv);
+
+console.log(result.children);
+
+const heading = document.createElement("h2");
+const textForHeading = document.createTextNode("Dynamic heading");
+
+heading.appendChild(textForHeading);
+heading.classList.add("blue");
+result.appendChild(heading);
+console.log(result.children);
