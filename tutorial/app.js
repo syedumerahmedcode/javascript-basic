@@ -17,3 +17,10 @@ const text = document.createTextNode("a simple body div");
 bodyDiv.appendChild(text);
 console.log(result.children);
 document.body.insertBefore(bodyDiv, result);
+
+const smallHeading = document.createElement("h6");
+const smallText = document.createTextNode(`I'm a smll heading text`);
+smallHeading.classList.add("red");
+smallHeading.appendChild(smallText);
+
+document.body.replaceChild(smallHeading, bodyDiv);
