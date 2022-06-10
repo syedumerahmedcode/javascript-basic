@@ -20,3 +20,5 @@ https://bechtle.udemy.com/course/javascript-tutorial-for-beginners-w/learn/lectu
 
 * document objects exists inside window object
 * If one wants to find the properties and methods of an object in DOM, just use console.dir().
+
+* In form tag, action attribute tells where will be sending the data.
