@@ -10,3 +10,14 @@
  * relative to the viewport.
  *
  */
+
+console.log("Height: " + window.innerHeight);
+console.log("Width: " + window.innerWidth);
+
+const btn = document.querySelector(".btn");
+const box = document.querySelector(".box");
+
+btn.addEventListener("click", function () {
+  const values = box.getBoundingClientRect();
+  console.log(values);
+});
