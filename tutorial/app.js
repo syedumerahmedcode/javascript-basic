@@ -11,7 +11,7 @@
  */
 
 window.addEventListener("load", function () {
-  const heading = document.querySelector("h1");
-  console.log(heading);
-  heading.style.color = "red";
+  const img = document.querySelector("img");
+  console.log(img);
+  console.log(img.width);
 });
