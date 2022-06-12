@@ -1,22 +1,12 @@
 /**
- * Scroll Event - on an element or a document
-
-
-window.addEventListener("scroll", function () {
-  console.log(window.screenY + "px");
-  console.log(window.screenX + "px");
-});
-
-document
-
-scrollY - returns the number of pixels the document
-is currently scrolled along the vertical axis (pageYOffset)
-
-scrollX - returns the number of pixels the document
-is currently scrolled along the horizontal axis (pageXOffset)
-
+ * innerWidth - The read-only Windows property
+ * The interior width of the Windows in pixels
+ *
+ * innerHeight - The read-only property of the Windows interface.
+ * Returns the interior height of the Windows in pixels.
+ *
+ * The Element.getBoundingClientRect() method returns a DOMRect opbject
+ * providing information about the size of an element and its position
+ * relative to the viewport.
+ *
  */
-window.addEventListener("scroll", function () {
-  console.log(window.screenY + "px");
-  console.log(window.screenX + "px");
-});
