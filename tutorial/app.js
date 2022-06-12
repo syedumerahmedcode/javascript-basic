@@ -16,3 +16,7 @@ scrollX - returns the number of pixels the document
 is currently scrolled along the horizontal axis (pageXOffset)
 
  */
+window.addEventListener("scroll", function () {
+  console.log(window.screenY + "px");
+  console.log(window.screenX + "px");
+});
